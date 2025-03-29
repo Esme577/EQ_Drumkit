@@ -9,7 +9,28 @@
 <body>
 
 
-  <div class="keys">
+<div class="slideshow-container">
+
+
+  <!-- Next and previous buttons -->
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+
+
+
+<!-- slidedots-->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+
+</div>
+
+
+  <!-- drumkit -->
+  <div class="mySlides">
+    <h1>drumkit</h1>
+   <div class="keys">
     <div data-key="65" class="key">
       <kbd>A</kbd>
       <span class="sound">clap</span>
@@ -46,8 +67,9 @@
       <kbd>L</kbd>
       <span class="sound">tink</span>
     </div>
-  </div>
-
+  
+ 
+  <!-- drumkit audio -->
   <audio data-key="65" src="sounds/clap.wav"></audio>
   <audio data-key="83" src="sounds/hihat.wav"></audio>
   <audio data-key="68" src="sounds/kick.wav"></audio>
@@ -58,9 +80,152 @@
   <audio data-key="75" src="sounds/tom.wav"></audio>
   <audio data-key="76" src="sounds/tink.wav"></audio>
 
+
+ </div>
+
+
+
+
+  <!-- Piano-->
+  <div class="mySlides">
+    <div class="keys">
+     <div data-key="65" class="key">
+       <kbd>Q</kbd>
+       <span class="sound">key01</span>
+     </div>
+     <div data-key="83" class="key">
+       <kbd>W</kbd>
+       <span class="sound">KEY02</span>
+     </div>
+     <div data-key="68" class="key">
+       <kbd>E</kbd>
+       <span class="sound">KEY03</span>
+     </div>
+     <div data-key="70" class="key">
+       <kbd>R</kbd>
+       <span class="sound">KEY04</span>
+     </div>
+     <div data-key="71" class="key">
+       <kbd>T</kbd>
+       <span class="sound">KEY05</span>
+     </div>
+     <div data-key="72" class="key">
+       <kbd>Y</kbd>
+       <span class="sound">KEY06</span>
+     </div>
+     <div data-key="74" class="key">
+       <kbd>U</kbd>
+       <span class="sound">KEY07</span>
+     </div>
+     <div data-key="75" class="key">
+       <kbd>I</kbd>
+       <span class="sound">KEY08</span>
+     </div>
+     <div data-key="76" class="key">
+       <kbd>O</kbd>
+       <span class="sound">KEY09</span>
+     </div>
+     <div data-key="77" class="key">
+      <kbd>P</kbd>
+      <span class="sound">KEY10</span>
+    </div>
+    <div data-key="78" class="key">
+      <kbd>A</kbd>
+      <span class="sound">KEY11</span>
+    </div>
+    <div data-key="79" class="key">
+      <kbd>S</kbd>
+      <span class="sound">KEY12</span>
+    </div>
+    <div data-key="80" class="key">
+      <kbd>D</kbd>
+      <span class="sound">KEY13</span>
+    </div>
+    <div data-key="81" class="key">
+      <kbd>F</kbd>
+      <span class="sound">KEY14</span>
+    </div>
+    <div data-key="82" class="key">
+      <kbd>G</kbd>
+      <span class="sound">KEY15</span>
+    </div>
+    <div data-key="93" class="key">
+      <kbd>H</kbd>
+      <span class="sound">KEY16</span>
+    </div>
+    <div data-key="84" class="key">
+      <kbd>J</kbd>
+      <span class="sound">KEY17</span>
+    </div>
+    <div data-key="85" class="key">
+      <kbd>K</kbd>
+      <span class="sound">KEY18</span>
+    </div>
+    <div data-key="86" class="key">
+      <kbd>L</kbd>
+      <span class="sound">KEY19</span>
+    </div>
+    <div data-key="87" class="key">
+      <kbd>;</kbd>
+      <span class="sound">KEY20</span>
+    </div>
+    <div data-key="88" class="key">
+      <kbd>Z</kbd>
+      <span class="sound">KEY21</span>
+    </div>
+    <div data-key="89" class="key">
+      <kbd>X</kbd>
+      <span class="sound">KEY22</span>
+    </div>
+    <div data-key="90" class="key">
+      <kbd>C</kbd>
+      <span class="sound">KEY23</span>
+    </div>
+    <div data-key="91" class="key">
+      <kbd>V</kbd>
+      <span class="sound">KEY24</span>
+    </div>
+   
+  
+   <!-- piano audio -->
+   <audio data-key="65" src="sounds/key01.mp3"></audio>
+   <audio data-key="83" src="sounds/key02.mp3"></audio>
+   <audio data-key="68" src="sounds/key03.mp3"></audio>
+   <audio data-key="70" src="sounds/key04.mp3"></audio>
+   <audio data-key="71" src="sounds/key05.mp3"></audio>
+   <audio data-key="72" src="sounds/key06.mp3"></audio>
+   <audio data-key="73" src="sounds/key07.mp3"></audio>
+   <audio data-key="74" src="sounds/key08.mp3"></audio>
+   <audio data-key="75" src="sounds/key09.mp3"></audio>
+   <audio data-key="76" src="sounds/key10.mp3"></audio>
+   <audio data-key="77" src="sounds/key11.mp3"></audio>
+   <audio data-key="78" src="sounds/key12.mp3"></audio>
+   <audio data-key="79" src="sounds/key13.mp3"></audio>
+   <audio data-key="80" src="sounds/key14.mp3"></audio>
+   <audio data-key="81" src="sounds/key15.mp3"></audio>
+   <audio data-key="82" src="sounds/key16.mp3"></audio>
+   <audio data-key="93" src="sounds/key17.mp3"></audio>
+   <audio data-key="84" src="sounds/key18.mp3"></audio>
+   <audio data-key="85" src="sounds/key19.mp3"></audio>
+   <audio data-key="86" src="sounds/key20.mp3"></audio>
+   <audio data-key="87" src="sounds/key21.mp3"></audio>
+   <audio data-key="88" src="sounds/key22.mp3"></audio>
+   <audio data-key="89" src="sounds/key23.mp3"></audio>
+   <audio data-key="90" src="sounds/key24.mp3"></audio>
+
+
+ 
+ 
+  </div>
+
+
+
+
+
 <script>
 
 
+//plays sound
 function playSound(e){
     const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
     const key = document.querySelector(`.key[data-key="${e.keyCode}"]`);
@@ -72,24 +237,73 @@ function playSound(e){
     // key.classList.remove('playing')
     //key.classList.toggle('playing')
 
+
 }
-
-
-
-
+//remove yellow box after its done playing
 function removeTransition(e) {
   if(e.propertyName !== 'transform') return;//skip if it is not a transform
   e.target.classList.remove('playing')
   //console.log(e.propertyName)
   //console.log(e)
-  
 }
+//
 
+
+// function removeTransition(e) {
+//   if (e.propertyName !== 'transform') {
+//     return;
+//   } else if (e.propertyName === 'transform') {
+//     e.target.classList.remove('playing');
+//   }
+// }
 const keys = document.querySelectorAll('.key');
 keys.forEach(key => key.addEventListener('transitionend', removeTransition));
 window.addEventListener('keydown',playSound);
+
+
+
+
+//animation to turn slides
+let slideIndex = 1;
+showSlides(slideIndex);
+
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace("active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
 </script>
+
+
+
+
+</div>
 
 
 </body>
 </html>
+
+
+
